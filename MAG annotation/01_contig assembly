@@ -1,0 +1,2 @@
+
+megahit -1 <path/to/*_1.fq> -2 <path/to/*_2.fq> -m 100000000000 -t 24 -o A1 --out-prefix A1 --min-contig-len 1500
