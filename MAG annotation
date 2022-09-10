@@ -1,0 +1,13 @@
+
+
+
+
+metabat2 -i A1.contigs.fa -a A1.depth -m 20000 --saveCls --unbinned --seed 2019 -o A1_bin/A1_bin
+
+
+#
+dRep dereplicate <path/to/save/data> -g <path/to/bin/*.fasta> -p 12 
+default parameters [dRep dereplicate <path/to/save/data> -g <path/to/bin/*.fasta> -sa 0.99 -nc 0.10 -comp 75 -con 25]
+
+#MAG annotation
+gtdbtk classify_wf --genome_dir <path/to/dereplicated_genomes> --out_dir <path/to/save/data> --cpus 32 --extension fa --force
