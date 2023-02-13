@@ -1,2 +1,0 @@
-# Quality control using Fastp
-fastp -i $reads_1.fastq -I $reads_2.fastq -o $trimmed_reads_1.fastq -O $trimmed_reads_2.fastq -h $qc_report
